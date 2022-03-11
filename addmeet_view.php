@@ -25,7 +25,7 @@
 								<input type="text" class="form-control" name="title">
 							</div>
 						</div>
-						<!-- hello world -->
+						<!-- dwdasda -->
 						<div style="height:10px;"></div>
 						<div class="row">
 							<div class="col-lg-2">
