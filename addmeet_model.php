@@ -3,6 +3,11 @@ include('conn.php');
 
 $title = $_POST['title'];
 $roomid = $_POST['roomid'];
+$head = $_POST['head'];
+$numattend = $_POST['numattend'];
+$end = $_POST['end'];
+$start = $_POST['start'];
+
 
 $file = $_FILES['meetfile'];
 $filename = $_FILES["meetfile"]["name"];
@@ -15,5 +20,5 @@ $fileDes = 'upload/' . $newFilename;
 move_uploaded_file($filTmpename,$fileDes);
 $meetfilelocation=$fileDes;
 
-mysqli_query($conn, "insert into meeting(title,roomid,meetfile) values('$title','$roomid','$meetfilelocation')");
+mysqli_query($conn, "insert into meeting(title,roomid,meetfile,numattend,head) values('$title','$roomid','$meetfilelocation','$numattend','$head')");
 header('location:addmeet.php');

@@ -32,7 +32,7 @@
 								<label class="control-label" style="position:relative; top:7px;">ประธานการประชุม:</label>
 							</div>
 							<div class="col-lg-10">
-								<select class="form-control" id="head">
+								<select class="form-control" name='head' id="head">
 									<option>นายกเทศมนตรี </option>
 									<option>รองนายกเทศมนตรี1</option>
 									<option>รองนายกเทศมนตรี2</option>
@@ -64,7 +64,7 @@
 								<label class="control-label" style="position:relative; top:7px;">ห้องประชุม:</label>
 							</div>
 							<div class="col-lg-10">
-								<select class="form-control" id="roomid">
+								<select class="form-control" name="roomid" id="roomid">
 									<?php
 									include('conn.php');
 									$query = mysqli_query($conn, "select * from room");
