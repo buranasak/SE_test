@@ -68,7 +68,7 @@
 								<select class="form-control" name="roomid" id="roomid">
 									<?php
 									include('conn.php');
-									$query = mysqli_query($conn, "select * from room");
+									$query = mysqli_query($conn, "SELECT * from room");
 									while ($row = mysqli_fetch_array($query)) {
 									?>
 										<option value="<?php echo $row['roomid']; ?>"><?php echo $row['roomname']; ?></option>
