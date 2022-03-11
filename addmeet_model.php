@@ -20,5 +20,5 @@ $fileDes = 'upload/' . $newFilename;
 move_uploaded_file($filTmpename,$fileDes);
 $meetfilelocation=$fileDes;
 
-mysqli_query($conn, "insert into meeting(title,roomid,meetfile,numattend,head) values('$title','$roomid','$meetfilelocation','$numattend','$head')");
+mysqli_query($conn, "insert into meeting(title,roomid,meetfile,numattend,head,end,start) values('$title','$roomid','$meetfilelocation','$numattend','$head','$end','$start')");
 header('location:addmeet.php');
