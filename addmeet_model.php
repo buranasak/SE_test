@@ -3,6 +3,7 @@ include('conn.php');
 
 $title = $_POST['title'];
 $roomid = $_POST['roomid'];
+$listname=$_POST['listname'];
 $head = $_POST['head'];
 $numattend = $_POST['numattend'];
 $end = $_POST['end'];
