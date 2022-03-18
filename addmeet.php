@@ -48,6 +48,7 @@
 						<td><?php echo $row['title']; ?></td>
 						<td><?php echo $row['head']; ?></td>
                         <td><?php echo $row['numattend']; ?></td>
+						<td><?php echo $row['listname']; ?></td>
                         <td><?php echo $row['roomid']; ?></td>
                         <td><?php echo $row['start']; ?></td>
 						<td><?php echo $row['end']; ?></td>

@@ -108,7 +108,7 @@
 							</div>
 							<div class="col-lg-10">
 								<!-- <input type="datetime-local" class="form-control" name="start"> -->
-                                <input type="text" name="start" class="form-control" value="<?php echo $erow['start']; ?>">
+                                <input type="datetime-local" name="start" class="form-control" value="<?php echo $erow['start']; ?>">
 							</div>
 						</div>
 						<div class="row">
@@ -117,7 +117,7 @@
 							</div>
 							<div class="col-lg-10">
 								<!-- <input type="datetime-local" class="form-control" name="end"> -->
-                                <input type="text" name="end" class="form-control" value="<?php echo $erow['end']; ?>">
+                                <input type="datetime-local" name="end" class="form-control" value="<?php echo $erow['end']; ?>">
 							</div>
 						</div>
 						<div style="height:10px;"></div>
