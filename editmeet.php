@@ -14,10 +14,10 @@
 	$remark=$_POST['remark'];
 
 	
-	mysqli_query($conn,"update events set  
-						id='$id',title='$title', head='$head', numattend='$numattend', listname='$listname', 
+	mysqli_query($conn,"UPDATE events set  
+						title='$title', head='$head', numattend='$numattend', listname='$listname', 
 						roomid='$roomid',start='$start', end='$end', addequipment='$addequipment'
-						meetfile='$meetfile', remark='$remark' where roomid='$roomid'");
+						meetfile='$meetfile', remark='$remark' where id='$id'");
 	header('location:addmeet.php');
 
 ?>
