@@ -14,10 +14,7 @@
 	$remark=$_POST['remark'];
 
 	
-	mysqli_query($conn,"UPDATE events set  
-						title='$title', head='$head', numattend='$numattend', listname='$listname', 
-						roomid='$roomid',start='$start', end='$end', addequipment='$addequipment'
-						meetfile='$meetfile', remark='$remark' where id='$id'");
+	mysqli_query($conn,"UPDATE events set title='$title', head='$head', numattend='$numattend', listname='$listname', roomid='$roomid',start='$start', end='$end', addequipment='$addequipment' ,meetfile='$meetfile', remark='$remark' where id='$id'");
 	header('location:addmeet.php');
 
 ?>
