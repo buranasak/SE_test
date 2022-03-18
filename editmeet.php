@@ -16,7 +16,7 @@
 
 	
 	mysqli_query($conn,"update events set  
-						meetid='$meetid',title='$title', head='$head', numattend='$numattend', listname='$listname', 
+						id='$id',title='$title', head='$head', numattend='$numattend', listname='$listname', 
 						roomid='$roomid',start='$start', end='$end', addequipment='$addequipment'
 						meetfile='$meetfile', remark='$remark' where roomid='$roomid'");
 	header('location:addmeet.php');
