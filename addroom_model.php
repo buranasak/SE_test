@@ -8,7 +8,7 @@
 	$microphone=$_POST['microphone'];
 	$other=$_POST['other'];
 	
-	mysqli_query($conn,"insert into room (roomname, location, capacity, projector, microphone, other) values ('$roomname', '$location','$capacity','$projector','$microphone','$other')");
+	mysqli_query($conn,"insert into room(roomname, location, capacity, projector, microphone, other) values ('$roomname', '$location','$capacity','$projector','$microphone','$other')");
 	header('location:addroom.php');
 
 

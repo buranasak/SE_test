@@ -1,8 +1,7 @@
 <?php
 	include('conn.php');
 	
-	$meetid=$_GET['meetid'];
-	
+	$id=$_GET['id'];
 	$title=$_POST['title'];
 	$head=$_POST['head'];
 	$numattend=$_POST['numattend'];
