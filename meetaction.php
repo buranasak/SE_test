@@ -1,5 +1,5 @@
 <!-- Delete -->
-    <div class="modal fade" id="del<?php echo $row['roomid']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="del<?php echo $row['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -8,7 +8,7 @@
                 </div>
                 <div class="modal-body">
 				<?php
-					$del=mysqli_query($conn,"select * from events where id='".$row['id']."'");
+					$del=mysqli_query($conn,"SELECT * from events where id='".$row['id']."'");
 					$drow=mysqli_fetch_array($del);
 				?>
 				<div class="container-fluid">
@@ -26,7 +26,7 @@
 <!-- /.modal -->
 
 <!-- Edit -->
-    <div class="modal fade" id="edit<?php echo $row['roomid']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="edit<?php echo $row['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="modal-body">
 				<?php
-					$edit=mysqli_query($conn,"select * from events where id='".$row['id']."'");
+					$edit=mysqli_query($conn,"SELECT * from events where id='".$row['id']."'");
 					$erow=mysqli_fetch_array($edit);
 				?>
 				<div class="container-fluid">
