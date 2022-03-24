@@ -52,7 +52,7 @@
                         <td><?php echo $row['roomid']; ?></td>
                         <td><?php echo $row['start']; ?></td>
 						<td><?php echo $row['end']; ?></td>
-						<td><a href="<?php echo $row['meetfile']; ?>">ดูไฟล์</a></td>
+						<td><a href="<?php echo $row['meetfile']; ?>" target="_blank" >ดูไฟล์</a></td>
 						<td>
 							<a href="#edit<?php echo $row['id']; ?>" data-toggle="modal" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Edit</a> || 
 							<a href="#del<?php echo $row['id']; ?>" data-toggle="modal" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a>
