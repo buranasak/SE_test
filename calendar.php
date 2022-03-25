@@ -22,7 +22,10 @@
 
 <!-- Custom CSS -->
 <style>
-
+	body {
+       /* padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
 	#calendar {
 		max-width: 800px;
 	}
@@ -72,7 +75,7 @@
 							<center><strong>เลือกผู้บริหาร </strong></center>
 						</span>
 						<select name="searchhead" class="form-control" id="searchhead">
-							<option value=""> ประธานทั้งหมด</option>
+							<option value="ประธานทั้งหมด"> ประธานทั้งหมด</option>
 							<option value="นายกเทศมนตรี"> นายกเทศมนตรี</option>
 							<option value="รองนายกเทศมนตรี1"> รองนายกเทศมนตรี1</option>
 							<option value="รองนายกเทศมนตรี2"> รองนายกเทศมนตรี2</option>
