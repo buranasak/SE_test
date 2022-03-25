@@ -41,8 +41,7 @@
 				include('conn.php');
 			
 				$query=mysqli_query($conn,'SELECT * FROM events');
-				while($row=mysqli_fetch_array($query)){
-					?>
+				while($row=mysqli_fetch_array($query)){?>
 					<tr>
 						<td><?php echo $row['id']; ?></td>
 						<td><?php echo $row['title']; ?></td>
