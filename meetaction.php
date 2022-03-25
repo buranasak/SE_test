@@ -174,25 +174,6 @@
                             </div>
                         </div>
 
-                    
-                        <!-- <div class="row">
-						<div class="col-lg-2">
-							<label style="position:relative; top:7px;">วาระประชุม:</label>
-						</div>
-						<div class="col-lg-10">
-							<input type="text" name="title" class="form-control" value="<?php echo $erow['title']; ?>">
-						</div>
-					</div>
-					<div style="height:10px;"></div>
-					<div class="row">
-						<div class="col-lg-2">
-							<label style="position:relative; top:7px;">ประธานการประชุม:</label>
-						</div>
-						<div class="col-lg-10">
-							<input type="text" name="location" class="form-control" value="<?php echo $erow['location']; ?>">
-						</div>
-					</div> -->
-                    
 
 
                 </div>
