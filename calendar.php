@@ -23,9 +23,10 @@
 <!-- Custom CSS -->
 <style>
 	body {
-       /* padding-top: 70px;
+		/* padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
+	}
+
 	#calendar {
 		max-width: 800px;
 	}
@@ -43,15 +44,19 @@
 
 
 	if (isset($_POST['searchhead']) && isset($_POST['searchroom'])) {
-		$searchhead = $_POST['searchhead'];
-		$searchroom = $_POST['searchroom'];
-		$sql = "SELECT * FROM events where head = '$searchhead' && roomid = '$searchroom'";
-	} else if (isset($_POST['searchhead']) && empty($_POST['searchroom'])) {
-		$searchhead = $_POST['searchhead'];
-		$sql = "SELECT * FROM events where head = '$searchhead';";
-	} else if (isset($_POST['searchroom']) && empty($_POST['searchhead'])) {
-		$searchroom = $_POST['searchroom'];
-		$sql = "SELECT * FROM events where roomid = '$searchroom';";
+		if ($_POST['searchhead'] == ""  && $_POST['searchroom'] == "") {
+			$sql = "SELECT * FROM events";
+		} else if (isset($_POST['searchhead']) && empty($_POST['searchroom'])) {
+			$searchhead = $_POST['searchhead'];
+			$sql = "SELECT * FROM events where head = '$searchhead';";
+		} else if (isset($_POST['searchroom']) && empty($_POST['searchhead'])) {
+			$searchroom = $_POST['searchroom'];
+			$sql = "SELECT * FROM events where roomid = '$searchroom';";
+		} else {
+			$searchhead = $_POST['searchhead'];
+			$searchroom = $_POST['searchroom'];
+			$sql = "SELECT * FROM events where head = '$searchhead' && roomid = '$searchroom'";
+		}
 	} else {
 		$sql = "SELECT * FROM events";
 	}

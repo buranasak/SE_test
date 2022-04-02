@@ -15,7 +15,6 @@
   <body>
 
 <?php
-session_start(); 
 include("adminmenu.php"); 
 
 
@@ -41,7 +40,7 @@ include("adminmenu.php");
                 <th>วันเวลาเริ่มประชุม</th>
 				<th>วันเวลาสิ้นสุดการประชุม</th>
 				<th>ไฟล์</th>
-				<th></th>
+				<th>จัดการ</th>
 			</thead>
 			<tbody>
 			<?php
