@@ -37,7 +37,7 @@ if (isset($_SESSION['user'])) {
 	<div class="container">
 		<div style="height:50px;"></div>
 		<div class="well" style="margin:auto; padding:auto; width:80%;">
-			<span style="font-size:25px; color:blue">
+			<span style="font-size:25px; color:black">
 				<center><strong>เพิ่มห้องประชุม</strong></center>
 			</span>
 			<span class="pull-left"><a href="#addnew" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add New</a></span>

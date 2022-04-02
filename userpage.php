@@ -15,11 +15,15 @@
 </head>
 
 <body>
-  <?php 
+  <?php
   session_start();
   include('usermenu.php');
   ?>
 
+
+  <div>
+    <img src="img/meeting.png" class="center-block img-fluid" alt="Responsive image">
+  </div>
 
 
 

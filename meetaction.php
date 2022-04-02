@@ -60,12 +60,7 @@
                                 <label style="position:relative; top:7px;">ประธานการประชุม:</label>
                             </div>
                             <div class="col-lg-10">
-                                <select class="form-control" name='head' id="head" value="<?php echo $erow['head']; ?>">
-                                    <option>นายกเทศมนตรี </option>
-                                    <option>รองนายกเทศมนตรี1</option>
-                                    <option>รองนายกเทศมนตรี2</option>
-                                    <option>รองนายกเทศมนตรี3</option>
-                                </select>
+                                <input type="text" name="head" class="form-control" value="<?php echo $erow['head']; ?>">
                             </div>
                         </div>
                         <div style="height:10px;"></div>
@@ -77,6 +72,7 @@
                                 <input type="text" class="form-control" name="numattend" value="<?php echo $erow['numattend']; ?>">
                             </div>
                         </div>
+
                         <div style="height:10px;"></div>
                         <div class="row">
                             <div class="col-lg-2">
@@ -84,12 +80,7 @@
 
                             </div>
                             <div class="col-lg-10">
-                                <select class="form-control" name='head' id="head" value="<?php echo $erow['roomname']; ?>">
-                                    <option>นายกเทศมนตรี </option>
-                                    <option>รองนายกเทศมนตรี1</option>
-                                    <option>รองนายกเทศมนตรี2</option>
-                                    <option>รองนายกเทศมนตรี3</option>
-                                </select>
+                                <input type="text" class="form-control" name="roomid" value="<?php echo $erow['roomid']; ?>">
                             </div>
                         </div>
                         <div class="row">
@@ -97,7 +88,7 @@
                                 <label class="control-label" style="position:relative; top:7px;">เริ่มเวลา:</label>
                             </div>
                             <div class="col-lg-10">
-                                <input type="datetime-local" class="form-control" name="start" value="<?php echo $erow['start']; ?>">
+                                <input type="datetime" class="form-control" name="start" value="<?php echo $erow['start']; ?>">
                             </div>
                         </div>
                         <div class="row">
@@ -105,19 +96,15 @@
                                 <label class="control-label" style="position:relative; top:7px;">สิ้นสุดเวลา:</label>
                             </div>
                             <div class="col-lg-10">
-                                <input type="datetime-local" class="form-control" name="end" value="<?php echo $erow['end']; ?>">
+                                <input type="datetime" class="form-control" name="end" value="<?php echo $erow['end']; ?>">
+                                <input type="hidden" class="form-control" name="meetfile" value="<?php echo $erow['meetfile']; ?>">
+                                <input type="hidden" class="form-control" name="remark" value="<?php echo $erow['remark']; ?>">
+                                <input type="hidden" class="form-control" name="listname" value="<?php echo $erow['listname']; ?>">
+                                <input type="hidden" class="form-control" name="addequipment" value="<?php echo $erow['addequipment']; ?>">
                             </div>
                         </div>
 
-                        <div style="height:10px;"></div>
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <label class="control-label" style="position:relative; top:7px;">ไฟล์วาระประชุม:</label>
-                            </div>
-                            <div class="col-lg-10">
-                                <input type="file" class="form-control" name="meetfile" value="<?php echo $erow['meetfile']; ?>">
-                            </div>
-                        </div>
+
 
                 </div>
             </div>
