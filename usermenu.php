@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
-<?php
 
-?>
 
 <head>
     <!-- Required meta tags -->
@@ -23,7 +21,7 @@
             <!-- Just an image -->
 
             <a class="navbar-brand" href="#">
-                <img src="img/meeting.png" width="30" height="30" alt="">
+                <img src="img/logo.png" width="30" height="30" alt="">
             </a>
 
             <a class="navbar-brand" href="index.html">ระบบจองห้องประชุม</a>

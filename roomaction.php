@@ -8,7 +8,7 @@
                 </div>
                 <div class="modal-body">
 				<?php
-					$del=mysqli_query($conn,"select * from room where roomid='".$row['roomid']."'");
+					$del=mysqli_query($conn,"SELECT * from room where roomid='".$row['roomid']."'");
 					$drow=mysqli_fetch_array($del);
 				?>
 				<div class="container-fluid">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="modal-body">
 				<?php
-					$edit=mysqli_query($conn,"select * from room where roomid='".$row['roomid']."'");
+					$edit=mysqli_query($conn,"SELECT * from room where roomid='".$row['roomid']."'");
 					$erow=mysqli_fetch_array($edit);
 				?>
 				<div class="container-fluid">

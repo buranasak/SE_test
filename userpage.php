@@ -1,8 +1,5 @@
 <!doctype html>
 <html lang="en">
-<?php
-session_start();
-?>
 
 <head>
   <!-- Required meta tags -->
@@ -19,6 +16,7 @@ session_start();
 
 <body>
   <?php 
+  session_start();
   include('usermenu.php');
   ?>
 

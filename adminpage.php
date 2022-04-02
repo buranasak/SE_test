@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
+<?php
+//check session 
+session_start();
+if (isset($_SESSION['user'])) {
+  echo "";
+} else {
+  echo "<script>alert('คุณยังไม่ได้เข้าสู่ระบบ กลับไปยังหน้าเข้าสู่ระบบก่อน')</script>";
+  echo "<script>window.open('login.php','_self')</script>";
+}
 
+?>
 
 <head>
   <!-- Required meta tags -->

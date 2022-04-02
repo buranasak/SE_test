@@ -127,12 +127,15 @@
 							<div class="col-lg-10">
 								<?php
 								$userrequest = $_SESSION['user'];
-								$queryuser = mysqli_query($conn, "select * from user where username='$userrequest'");
+								$queryuser = mysqli_query($conn, "SELECT * from user where username='$userrequest'");
 								while ($row = mysqli_fetch_array($queryuser)) {
 								?>
 									<div class="col-lg-10">
 									<?php echo $row['username'];
-								} ?>
+									$_SESSION['userid'] = $row[0];
+								}
+
+									?>
 									</div>
 							</div>
 						</div>

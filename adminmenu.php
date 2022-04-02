@@ -59,16 +59,16 @@
 
       <div class="ml-md-2 my-lg-0">
         <?php
-        session_start();
+        // session_start();
         //check session 
-        if (isset($_SESSION['user'])) {
+        // if (isset($_SESSION['user'])) {
           echo "<p style='color:white'>ยินดีต้อนรับ ";
           echo $_SESSION['user'];
           echo "</p>";
-        } else {
-          echo "<script>alert('คุณยังไม่ได้เข้าสู่ระบบ กลับไปยังหน้าเข้าสู่ระบบก่อน')</script>";
-          echo "<script>window.open('login.php','_self')</script>";
-        }
+        // } else {
+        //   echo "<script>alert('คุณยังไม่ได้เข้าสู่ระบบ กลับไปยังหน้าเข้าสู่ระบบก่อน')</script>";
+        //   echo "<script>window.open('login.php','_self')</script>";
+        // }
         ?>
 
         <a href="logout.php" class="btn btn-primary" role="button">ออกจากระบบ</a>
