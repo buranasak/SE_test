@@ -15,8 +15,12 @@
   <body>
 
 <?php
-include("adminmenu.php"); 
-
+session_start();
+if($_SESSION['user']!='admin'){
+	include('usermenu.php');
+}else{
+	include("adminmenu.php"); 
+}
 
 ?>
 

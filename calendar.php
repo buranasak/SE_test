@@ -7,8 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>ระบบจองห้องประชุม</title>
 </head>
+<?php
+session_start();
+if ($_SESSION['user'] != 'admin') {
+	include('usermenu.php');
+} else {
+	include("adminmenu.php");
+}
 
-<?php include("adminmenu.php"); ?>
+
+?>
 
 <div>
 	<img src="img/meeting.png" class="center-block img-fluid" alt="Responsive image">
