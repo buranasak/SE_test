@@ -13,7 +13,13 @@
 
   </head>
   <body>
-<?php include("adminmenu.php"); ?>
+
+<?php
+session_start(); 
+include("adminmenu.php"); 
+
+
+?>
 
 <div>
   <img src="img/meeting.png" class="center-block img-fluid" alt="Responsive image">
@@ -34,7 +40,8 @@
 				<th>ห้องประชุม</th>
                 <th>วันเวลาเริ่มประชุม</th>
 				<th>วันเวลาสิ้นสุดการประชุม</th>
-				<th>จัดการ</th>
+				<th>ไฟล์</th>
+				<th></th>
 			</thead>
 			<tbody>
 			<?php

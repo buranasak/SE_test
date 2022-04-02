@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('conn.php');
 
 $id = $_POST['id'];
@@ -12,7 +13,6 @@ $end = $_POST['end'];
 $start = $_POST['start'];
 $addequipment = $_POST['addequipment'];
 $remark = $_POST['remark'];
-
 
 $file = $_FILES['meetfile'];
 $filename = $_FILES["meetfile"]["name"];
