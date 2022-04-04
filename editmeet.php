@@ -23,5 +23,5 @@ move_uploaded_file($filTmpename, $fileDes);
 $meetfilelocation = $fileDes;
 
 
-mysqli_query($conn, "UPDATE events set title='$title', head='$head', numattend='$numattend', listname='$listname', roomid='$roomid',start='$start', end='$end', addequipment='$addequipment' ,meetfile='$meetfilelocation', remark='$remark' where id='$id'");
+mysqli_query($conn, "UPDATE events set title='$title', head='$head', numattend='$numattend', listname='$listname', roomid='$roomid',start='$start', end='$end', addequipment='$addequipment' , remark='$remark' where id='$id'");
 header('location:addmeet.php');
